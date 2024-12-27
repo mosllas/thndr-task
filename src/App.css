@@ -1,0 +1,99 @@
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+/* Container that holds the entire layout */
+.app-container {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Main content area, flexible to take available space */
+.main-content {
+  flex: 1;
+  min-height: 84vh;
+  /* You can add padding or other styles here as needed */
+}
+
+.footer {
+  margin-top: auto !important;
+  padding: 10px 0;
+  text-align: center;
+
+  background-color: rgb(43 48 53);
+  width: 100%;
+}
+
+.text-center
+{
+  text-align: center;
+  color: white;
+}
+
+
+
+.tickers-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 10px;
+}
+
+.ticker-item {
+  width: 350px;
+  height: 150px;
+  background-color: #f8f9fa;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.ticker-symbol {
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.ticker-name {
+  font-size: 12px;
+  color: #555;
+}
+
+.currency-name {
+  font-size: 10px;
+  color: #777;
+}
